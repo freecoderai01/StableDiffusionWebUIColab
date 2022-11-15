@@ -203,13 +203,13 @@ class CrossAttention(nn.Module):
 
         if mem_required > mem_free_total:
             steps = 2**(math.ceil(math.log(mem_required / mem_free_total, 2)))
-            # print(f"Expected tensor size:{tensor_size/gb:0.1f}GB, cuda free:{mem_free_cuda/gb:0.1f}GB "
-            #      f"torch free:{mem_free_torch/gb:0.1f} total:{mem_free_total/gb:0.1f} steps:{steps}")
+            # print(f"Ожидаемый размер тензора:{tensor_size/gb:0.1f}Гб, доступно для Cuda:{mem_free_cuda/gb:0.1f}Гб "
+            #      f"torch:{mem_free_torch/gb:0.1f} всего:{mem_free_total/gb:0.1f} шагов:{steps}")
 
         if steps > 64:
             max_res = math.floor(math.sqrt(math.sqrt(mem_free_total / 2.5)) / 8) * 64
-            raise RuntimeError(f'Not enough memory, use lower resolution (max approx. {max_res}x{max_res}). '
-                               f'Need: {mem_required/64/gb:0.1f}GB free, Have:{mem_free_total/gb:0.1f}GB free')
+            raise RuntimeError(f'Недостаточно памяти, используйте более низкое разрешение (max approx. {max_res}x{max_res}). '
+                               f'Требуется: {mem_required/64/gb:0.1f}Гб свободными, а имеется только:{mem_free_total/gb:0.1f}Гб свободными')
 
         slice_size = q.shape[1] // steps if (q.shape[1] % steps) == 0 else q.shape[1]
         for i in range(0, q.shape[1], slice_size):
@@ -301,7 +301,7 @@ class MemoryEfficientCrossAttention(nn.Module):
             ).op
 
         except NotImplementedError as err:
-            raise NotImplementedError(f"Please install xformers with the flash attention / cutlass components.\n{err}")
+            raise NotImplementedError(f"Пожалуйста, установите xformers с компонентами flash attention / cutlass \n{err}")
 
     def forward(self, x, context=None, mask=None):
 
@@ -355,13 +355,13 @@ class MemoryEfficientCrossAttention(nn.Module):
 
         if mem_required > mem_free_total:
             steps = 2**(math.ceil(math.log(mem_required / mem_free_total, 2)))
-            # print(f"Expected tensor size:{tensor_size/gb:0.1f}GB, cuda free:{mem_free_cuda/gb:0.1f}GB "
-            #      f"torch free:{mem_free_torch/gb:0.1f} total:{mem_free_total/gb:0.1f} steps:{steps}")
+            # print(f"Ожидаемый размер тензора:{tensor_size/gb:0.1f}Гб, доступно для Cuda:{mem_free_cuda/gb:0.1f}Гб "
+            #      f"torch:{mem_free_torch/gb:0.1f} всего:{mem_free_total/gb:0.1f} шагов:{steps}")
 
         if steps > 64:
             max_res = math.floor(math.sqrt(math.sqrt(mem_free_total / 2.5)) / 8) * 64
-            raise RuntimeError(f'Not enough memory, use lower resolution (max approx. {max_res}x{max_res}). '
-                               f'Need: {mem_required/64/gb:0.1f}GB free, Have:{mem_free_total/gb:0.1f}GB free')
+            raise RuntimeError(f'Недостаточно памяти, используйте более низкое разрешение (max approx. {max_res}x{max_res}). '
+                               f'Требуется: {mem_required/64/gb:0.1f}Гб свободными, а имеется только:{mem_free_total/gb:0.1f}Гб свободными')
 
 
 
