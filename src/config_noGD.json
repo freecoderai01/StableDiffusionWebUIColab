@@ -121,7 +121,7 @@
     "training_xattention_optimizations": false,
     "sd_vae_checkpoint_cache": 0,
     "sd_vae": "auto",
-    "sd_vae_as_default": true,
+    "sd_vae_as_default": false,
     "inpainting_mask_weight": 1,
     "initial_noise_multiplier": 1,
     "img2img_background_color": "#00ff00",
