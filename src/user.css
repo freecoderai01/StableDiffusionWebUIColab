@@ -1,0 +1,40 @@
+#quicksettings > div > div {
+    min-width: 260px!important;
+    max-width: 260px!important;
+    padding: 5px!important;
+    max-height: 40px!important;
+}
+#setting_sd_vae_as_default,
+#setting_do_not_show_images {
+    width: 130px!important;
+    padding: 5px!important;
+    max-height: 40px!important;
+}
+#setting_sd_vae_as_default > label > span {
+    visibility: hidden!important;
+    margin-left: 0!important;
+    padding-left: 0!important;
+    max-height: 40px!important;
+}
+#setting_sd_vae_as_default > label > span:before {
+    visibility: visible!important;
+    content: "комплектный VAE модели"!important;
+    display: block!important;
+    margin-left: 5px!important;
+}
+#setting_do_not_show_images > label > span {
+    visibility: hidden!important;
+    margin-left: 0!important;
+    padding-left: 0!important;
+    max-height: 40px!important;
+}
+#setting_do_not_show_images > label > span:before {
+    visibility: visible!important;
+    content: "скрыть вывод картинок"!important;
+    display: block!important;
+    margin-left: 5px!important;
+}
+#setting_sd_vae > label > select > option,
+#setting_sd_model_checkpoint > label > select > option {
+    font-size: 0.8rem!important;
+}
