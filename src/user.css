@@ -1,8 +1,13 @@
+html,
+body {
+    background: #0b0f19 !important;
+}
 #quicksettings > div > div {
     min-width: 260px!important;
     max-width: 260px!important;
     padding: 5px!important;
     max-height: 40px!important;
+    margin: 5px 0px!important;
 }
 #setting_sd_vae_as_default,
 #setting_do_not_show_images {
@@ -37,4 +42,73 @@
 #setting_sd_vae > label > select > option,
 #setting_sd_model_checkpoint > label > select > option {
     font-size: 0.8rem!important;
+}
+
+#quicksettings::before {
+    content: "выбор модели и быстрые настройки";
+    position: relative;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+    top: -32px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#quicksettings {
+    position: absolute!important;
+    top: calc(100% + 6vh)!important;
+    background: #0b0f19 !important;
+}
+#quicksettings .gr-button-tool {
+    margin: 5px 0!important;
+}
+#component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
+    top: calc(100% + 27vh) !important;
+    position: absolute !important;
+    background: black !important;
+    padding: 12px 0 !important;
+}
+@media (max-width: 1189px) {
+    #component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
+        top: calc(100% + 36vh) !important;
+        position: absolute !important;
+        background: black !important;
+        padding: 12px 0 !important;
+    }
+}
+
+@media (max-width: 859px) {
+    #component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
+        top: calc(100% + 44vh) !important;
+        position: absolute !important;
+        background: black !important;
+        padding: 12px 0 !important;
+    }
+}
+
+@media (max-width: 638px) {
+    #component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
+        top: calc(100% + 52vh) !important;
+        position: absolute !important;
+        background: black !important;
+        padding: 12px 0 !important;
+    }
+}
+
+@media (max-width: 582px) {
+    #component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
+        top: calc(100% + 68vh) !important;
+        position: absolute !important;
+        background: black !important;
+        padding: 12px 0 !important;
+    }
+}
+
+@media (max-width: 565px) {
+    #component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
+        top: calc(100% + 66vh) !important;
+        position: absolute !important;
+        background: black !important;
+        padding: 12px 0 !important;
+    }
 }
