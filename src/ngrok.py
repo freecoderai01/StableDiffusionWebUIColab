@@ -21,4 +21,4 @@ def connect(token, port, region):
     except exception.PyngrokNgrokError:
         print('указан неверный токен или тебе выпал общий токен который использует другой анон, получи свежий: https://dashboard.ngrok.com/get-started/your-authtoken')
     else:
-        print(f'\033[01;38;05;112m⯈\033[0m Ссылка на Hгрок: {public_url})
+        print(f'\033[01;38;05;112m⯈\033[0m Ссылка на Hгрок: {public_url}')
