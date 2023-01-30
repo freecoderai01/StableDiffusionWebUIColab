@@ -1,60 +1,132 @@
-#component-1318 > div.tabs.flex.flex-col.my-4::before {
-  content: "выбор модели и быстрые настройки теперь внизу страницы";
-  color: gold;
+div.gradio-container.dark > div.w-full.flex.flex-col.min-h-screen > div > div::before {
+    content: "выбор модели и быстрые настройки теперь внизу страницы";
+    color: gold;
 }
+
+
+#quicksettings > div,
+#quicksettings > fieldset,
+#quicksettings > div > div {
+    max-width: 13rem !important;
+    min-width: 13rem !important;
+    margin-right: 10px !important;
+    margin-top: 8px !important;
+    margin-bottom: 10px !important;
+}
+#quicksettings > div:nth-child(1) > div,
+#setting_sd_vae_as_default > label > span,
+#setting_do_not_show_images > label > span {
+    max-height: 64px !important;
+    min-height: 50px !important;
+}
+
 
 html,
 body {
-    background: #0b0f19 !important;
+    background: #120702 !important;
 }
-#quicksettings > div > div {
-    min-width: 260px!important;
-    max-width: 260px!important;
-    padding: 5px!important;
-    max-height: 40px!important;
-    margin: 5px 0px!important;
-}
+
 #setting_sd_vae_as_default,
 #setting_do_not_show_images {
     width: 130px!important;
     padding: 5px!important;
     max-height: 40px!important;
 }
-#setting_sd_vae_as_default > label > span {
-    visibility: hidden!important;
-    margin-left: 0!important;
-    padding-left: 0!important;
-    max-height: 40px!important;
-}
-#setting_sd_vae_as_default > label > span:before {
-    visibility: visible!important;
-    content: "комплектный VAE модели"!important;
-    display: block!important;
-    margin-left: 5px!important;
-}
-#setting_do_not_show_images > label > span {
-    visibility: hidden!important;
-    margin-left: 0!important;
-    padding-left: 0!important;
-    max-height: 40px!important;
-}
-#setting_do_not_show_images > label > span:before {
-    visibility: visible!important;
-    content: "скрыть вывод картинок"!important;
-    display: block!important;
-    margin-left: 5px!important;
-}
-#setting_sd_vae > label > select > option,
-#setting_sd_model_checkpoint > label > select > option {
-    font-size: 0.8rem!important;
+
+#setting_sd_vae_as_default > label > span,
+#setting_do_not_show_images > label > span,
+#setting_CLIP_stop_at_last_layers > div.w-full.flex.flex-col > div > label > span,
+#setting_extra_networks_default_multiplier > div.w-full.flex.flex-col > div > label > span {
+    visibility: hidden !important;
 }
 
-#quicksettings::before {
+#setting_sd_vae_as_default > label > span:before {
+    visibility: visible!important;
+    content: "VAE модели"!important;
+    display: block!important;
+    margin-left: 2px!important;
+    width: 120px!important;
+}
+#setting_sd_vae_as_default,
+#setting_sd_vae_as_default > label,
+#quicksettings > div:nth-child(5) > label > span,
+#setting_sd_vae_as_default > div,
+#quicksettings > div:nth-child(5) {
+    max-width: 120px!important;
+    min-width: 120px!important;
+    width: 120px!important;
+}
+
+#setting_sd_vae_as_default > label > input {
+    position: relative;
+    margin-top: -37px!important;
+    margin-left: 0px!important;
+}
+
+#setting_sd_vae_as_default > label {
+    margin-top: -10px !important;
+}
+
+#setting_extra_networks_default_multiplier > div.w-full.flex.flex-col > div > label > span:before {
+    visibility: visible!important;
+    content: "множ. lora/гиперсети"!important;
+    display: block!important;
+    margin-left: 5px!important;
+    /* margin: -10px 2px -15px 0!important; */
+    position: relative!important;
+}
+
+#setting_do_not_show_images > label > span:before {
+    visibility: visible!important;
+    content: "скрыть вывод 🖼️"!important;
+    display: block!important;
+    margin-left: 5px!important;
+    margin-top: -10px !important;
+}
+#setting_do_not_show_images,
+#setting_do_not_show_images > div,
+#setting_do_not_show_images > label,
+#quicksettings > div:nth-child(8) {
+    max-width: 180px!important;
+    min-width: 180px!important;
+    width: 180px!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+#setting_do_not_show_images > label > input {
+    position: relative;
+    margin-top: -57px!important;
+    margin-left: 0px!important;
+}
+
+#setting_CLIP_stop_at_last_layers > div.w-full.flex.flex-col > div > label > span:before {
+    visibility: visible!important;
+    content: "clip skip"!important;
+    display: block!important;
+    /* margin-left: 5px!important; */
+    margin: -10px 2px -15px 0!important;
+    position: relative!important;
+}
+
+#setting_sd_vae > label > select > option,
+#setting_sd_model_checkpoint > label > select > option,
+#quicksettings > div:nth-child(1) > label > select > option {
+    font-size: 0.6rem!important;
+}
+
+.gr-box > div > div > input.gr-text-input {
+    right: 0.5em;
+    top: -0.6em;
+    width: 4em!important;
+}
+
+
+div.gradio-container.dark > div.w-full.flex.flex-col.min-h-screen > div > div::after {
     content: "выбор модели и быстрые настройки";
     position: relative;
     line-height: 1.3rem;
     font-size: 1.2rem;
-    top: -32px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -67,15 +139,15 @@ body {
 #quicksettings .gr-button-tool {
     margin: 5px 0!important;
 }
-#component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
-    top: calc(100% + 27vh) !important;
+div.gradio-container.dark > div.w-full.flex.flex-col.min-h-screen > div > div > div:nth-child(4) {
+    top: calc(100% + 30vh) !important;
     position: absolute !important;
     background: black !important;
     padding: 12px 0 !important;
 }
 @media (max-width: 1189px) {
-    #component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
-        top: calc(100% + 36vh) !important;
+    div.gradio-container.dark > div.w-full.flex.flex-col.min-h-screen > div > div > div:nth-child(4) {
+        top: calc(100% + 35vh) !important;
         position: absolute !important;
         background: black !important;
         padding: 12px 0 !important;
@@ -83,8 +155,8 @@ body {
 }
 
 @media (max-width: 859px) {
-    #component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
-        top: calc(100% + 44vh) !important;
+    div.gradio-container.dark > div.w-full.flex.flex-col.min-h-screen > div > div > div:nth-child(4) {
+        top: calc(100% + 45vh) !important;
         position: absolute !important;
         background: black !important;
         padding: 12px 0 !important;
@@ -92,7 +164,7 @@ body {
 }
 
 @media (max-width: 638px) {
-    #component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
+    div.gradio-container.dark > div.w-full.flex.flex-col.min-h-screen > div > div > div:nth-child(4) {
         top: calc(100% + 52vh) !important;
         position: absolute !important;
         background: black !important;
@@ -101,8 +173,8 @@ body {
 }
 
 @media (max-width: 582px) {
-    #component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
-        top: calc(100% + 68vh) !important;
+    div.gradio-container.dark > div.w-full.flex.flex-col.min-h-screen > div > div > div:nth-child(4) {
+        top: calc(100% + 64vh) !important;
         position: absolute !important;
         background: black !important;
         padding: 12px 0 !important;
@@ -110,10 +182,43 @@ body {
 }
 
 @media (max-width: 565px) {
-    #component-1318 > div.gr-block.gr-box.relative.w-full.overflow-hidden.border-solid.border.border-gray-200.\!p-0.\!m-0.\!border-0.\!shadow-none.\!overflow-visible.\!bg-transparent.gr-padded {
-        top: calc(100% + 66vh) !important;
+    div.gradio-container.dark > div.w-full.flex.flex-col.min-h-screen > div > div > div:nth-child(4) {
+        top: calc(100% + 65vh) !important;
         position: absolute !important;
         background: black !important;
         padding: 12px 0 !important;
     }
+}
+
+#quicksettings > div > div > div > label > span {
+    margin-right: 1px !important;
+}
+
+#tab_civitai_interface > div > div:nth-child(4),
+#tab_civitai_interface > div > div:nth-child(4) > div:nth-child(1),
+#tab_civitai_interface > div > div:nth-child(4) > div:nth-child(1) > div {
+    position: relative !important;
+    max-width: 42rem!important;
+    min-width: 42rem!important;
+    width: 42rem!important;
+}
+
+
+#tab_civitai_interface > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) {
+    width: 20rem!important;
+    position: absolute!important;
+    right: -500px!important;
+    top: 20px !important;
+}
+
+#tab_civitai_interface > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) {
+    width: 20rem!important;
+    position: relative!important;
+    right: 0px!important;
+    margin: 15px 0 30px 0;
+    top: 1px !important;
+}
+
+#licenses > h2:nth-child(14) > a {
+    display: none
 }
