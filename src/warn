@@ -1,0 +1,4 @@
+<style>
+@keyframes blink { 0% { color: #C20C0C; font-size:100%} 80% { color: #DF0935; } 100% { color: #FFFFFF; font-size:100.5%} }
+</style>
+<h3 id="blink" style="animation: blink 0.3s linear infinite; font-weight: bold; font-family: sans-serif; color: color: darkred; ">Colab запущен без видеоускорителя!<br>Используй другой аккаунт, на котором суточный лимит еще не исчерпан!</h3>
