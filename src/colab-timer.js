@@ -38,7 +38,7 @@ refreshTimer = (timerEl, notext = false) => {
     timeout = null;
   }
   if (!notext) timerEl.innerText = "подключение...";
-  fetch("file=static/colabTimer.txt", { cache: "no-store" })
+  fetch("file=static/launch.txt", { cache: "no-store" })
     .then((response) => {
       if (response.status == 404) {
         timerEl.innerText = "Ошибка: колаб выключился!";
