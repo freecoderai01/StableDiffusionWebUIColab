@@ -15,7 +15,6 @@
     min-height: 50px !important;
 }
 
-
 html,
 body {
     background: #120702 !important;
@@ -114,6 +113,7 @@ body {
     right: 0.5em;
     top: -0.6em;
     width: 4em!important;
+    padding: 0!important;
 }
 
 
