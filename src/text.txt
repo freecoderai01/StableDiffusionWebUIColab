@@ -1,5 +1,5 @@
 print("проверка exec")
-sleep 3
+!sleep 3
 %ls
 !ls
 !cp /content /root
