@@ -433,4 +433,48 @@
         background-size: 0.8em;
         font-size: 1.2em;
     }
+    .setup_complite {
+    color: var(--ansi-green);
+    font-weight: 700;
+    }
+    hr.hr_setup_comlite {
+        width: 88%;
+        position: relative;
+        right: 50%;
+        border: none;
+        border-top: 2px var(--ansi-green) solid;
+    }
+    .memory {
+        color: var(--ansi-blue);
+        font-weight: bold;
+    }
+    .mem_allocate,
+    .mem_all {
+        color: var(--ansi-green)
+    }
+    .percent {
+        color: var(--colab-primary-text-color)
+    }
+    .little_memory {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        color: var(--ansi-red);
+        font-weight: bold;
+        font-family: sans-serif!important;
+    }
+    .cell_fix {
+        font-family: Consolas, monospace!important;
+        color: var(--ansi-blue)
+    }
+    .cell_fix:before {
+        content: "«";
+        font-family: sans-serif!important;
+        color: var(--ansi-blue)
+    }
+    .cell_fix:after {
+        content: "»";
+        font-family: sans-serif!important;
+        color: var(--ansi-blue)
+    }
     </style>
