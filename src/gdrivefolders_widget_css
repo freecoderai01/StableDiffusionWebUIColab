@@ -1,0 +1,217 @@
+h2#header {
+    color: var(--ansi-green);
+    font-size: 1.5em!important;
+}
+h3 {
+    color: var(--ansi-blue);
+    font-size: 1.3em!important;
+    padding: 0!important;
+    margin: 0!important;
+    font-weight: normal;
+}
+#description {
+    width: 40vw!important;
+}
+p#description {
+    font-size: 1.2em!important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-top: 2px solid #8080807d;
+    padding-top: 0.6em;
+}
+#description code {
+    font-family: Consolas, monospace!important;
+    color: var(--ansi-blue)
+}
+.widget-label {
+    width: 0!important;
+    display: none!important;
+}
+.widget-checkbox {
+    padding: 0!important;
+    margin-right: 0!important;
+    width: 12em;
+}
+input[type=checkbox] {
+    width: 1.2em;
+    height: 1.2em;
+    position: relative;
+    top: 0.2em;
+}
+.widget-checkbox span[title] {
+    font-size: 1.2em!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+.widget-text {
+    width: auto;
+}
+input[type=text] {
+    width: 25em;
+    height: 1.2em;
+    margin: 0!important;
+    padding: 0 0.5em!important;
+}
+.item {
+    height: 3em!important;
+}
+@media (max-width: 2000px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: absolute;
+        top: 60.5%;
+        left: 28%
+    }
+}
+@media (max-width: 1920px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: absolute;
+        top: 60.5%;
+        left: 33%
+    }
+}
+@media (max-width: 1600px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: absolute;
+        top: 62%;
+        left: 36%
+    }
+}
+@media (max-width: 1540px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: absolute;
+        top: 62%;
+        left: 40%
+    }
+}
+@media (max-width: 1340px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: absolute;
+        top: 62%;
+        left: 45%
+    }
+}
+@media (max-width: 1200px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: absolute;
+        top: 62%;
+        left: 48%
+    }
+}
+@media (max-width: 1100px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: absolute;
+        top: 62%;
+        left: 55%
+    }
+}
+@media (max-width: 970px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: absolute;
+        top: 63%;
+        left: 58%
+    }
+}
+@media (max-width: 960px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: absolute;
+        top: 63%;
+        left: 63%
+    }
+}
+@media (max-width: 800px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: absolute;
+        top: 64%;
+        left: 72%
+    }
+}
+@media (max-width: 780px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: absolute;
+        top: 64%;
+        left: 70%
+    }
+}
+@media (max-width: 730px) {
+    .run {
+        width: 10em!important;
+        height: 2em!important;
+        font-size: 1.3em!important;
+        padding: 0!important;
+        margin: 0!important;
+        transition: 0.4s;
+        position: relative;
+        top: 1%;
+        left: 35%
+    }
+}
+.run:hover {
+    transition: 0.4s;
+    transform: scale(1.025)
+}
