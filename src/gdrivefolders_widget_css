@@ -1,3 +1,4 @@
+<style>
 h2#header {
     color: var(--ansi-green);
     font-size: 1.5em!important;
@@ -215,3 +216,4 @@ input[type=text] {
     transition: 0.4s;
     transform: scale(1.025)
 }
+</style>
