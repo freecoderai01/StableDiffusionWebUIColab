@@ -134,7 +134,8 @@
     "send_size": true,
     "live_previews_enable": false,
     "samplers_in_dropdown": false,
-    "dimensions_and_batch_together": true,
+    "dimensions_and_batch_together": false,
     "ui_reorder": "sampler, dimensions, cfg, seed, checkboxes, hires_fix, batch, scripts",
-    "always_discard_next_to_last_sigma": false
+    "always_discard_next_to_last_sigma": false,
+    "control_net_allow_script_control": true
 }
