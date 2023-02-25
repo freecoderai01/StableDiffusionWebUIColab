@@ -138,6 +138,6 @@
     "ui_reorder": "sampler, dimensions, cfg, seed, checkboxes, hires_fix, batch, scripts",
     "always_discard_next_to_last_sigma": false,
     "control_net_allow_script_control": true,
-    "def_batch_dir": "/content/stable-diffusion-webui/outputs/ip2p-batch",
-    "outdir_ip2p_samples": "/content/stable-diffusion-webui/outputs/ip2p-images"
+    "def_batch_dir": "/content/gdrive/MyDrive/SD/ip2p-batch",
+    "outdir_ip2p_samples": "/content/gdrive/MyDrive/SD/ip2p-images"
 }
