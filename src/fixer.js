@@ -31,7 +31,7 @@ function displayModal() {
 }
 
 
-setInterval(displayModal, 1800);
+setInterval(displayModal, 1800000);
 
 
 const modalStyle = `
