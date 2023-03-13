@@ -95,7 +95,7 @@
     "js_modal_lightbox": true,
     "js_modal_lightbox_initially_zoomed": true,
     "show_progress_in_title": true,
-    "quicksettings": "sd_model_checkpoint, sd_vae, sd_vae_as_default, CLIP_stop_at_last_layers, extra_networks_default_multiplier, do_not_show_images, sd_hypernetwork, sd_hypernetwork_strength",
+    "quicksettings": "sd_model_checkpoint, sd_vae, sd_vae_as_default, CLIP_stop_at_last_layers, extra_networks_default_multiplier, sd_hypernetwork, sd_hypernetwork_strength, do_not_show_images",
     "localization": "localization",
     "hide_samplers": [],
     "eta_ddim": 0,
