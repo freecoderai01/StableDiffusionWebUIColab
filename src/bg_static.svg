@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="background" viewBox="0 0 1921 1576.21">
+  <defs>
+    <linearGradient id="gradBG" x1="1258.62" x2="1152.59" y1="-191.15" y2="70.01" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#001121"/>
+      <stop offset="1" stop-color="#01090c"/>
+    </linearGradient>
+    <linearGradient id="gradG" x1="1151.12" x2="1076.51" y1="111.76" y2="360.48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#202b4f"/>
+      <stop offset=".87"/>
+    </linearGradient>
+    <linearGradient id="gradH" x1="1111.06" x2="1016.81" y1="248.58" y2="586.32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f1524"/>
+      <stop offset=".52"/>
+    </linearGradient>
+    <linearGradient id="gradF" x1="1822.36" x2="1821.86" y1="343.66" y2="344.66" gradientTransform="translate(-3497575.12 -517530.58) scale(1920 1506.59)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset=".23" stop-color="#11172b"/>
+    </linearGradient>
+    <linearGradient id="gradE" x1="1822.35" x2="1821.85" y1="343.65" y2="344.65" gradientTransform="translate(-3497575.12 -479506.42) scale(1920 1396.28)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000008"/>
+      <stop offset=".36" stop-color="#121832"/>
+    </linearGradient>
+    <linearGradient id="gradD" x1="1822.35" x2="1821.85" y1="343.63" y2="344.63" gradientTransform="translate(-3497575.12 -435864) scale(1920 1269.67)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#20325a"/>
+      <stop offset=".49"/>
+    </linearGradient>
+    <linearGradient id="gradC" x1="1822.36" x2="1821.86" y1="343.61" y2="344.61" gradientTransform="translate(-3497575.12 -383685.24) scale(1920 1118.29)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#202b4f"/>
+      <stop offset=".61"/>
+    </linearGradient>
+    <linearGradient id="gradB" x1="1822.35" x2="1821.85" y1="343.59" y2="344.59" gradientTransform="translate(-3497575.12 -346389.38) scale(1920 1010.09)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#202a48"/>
+      <stop offset=".74"/>
+    </linearGradient>
+    <linearGradient id="gradA" x1="1822.35" x2="1821.85" y1="343.56" y2="344.56" gradientTransform="translate(-3497575.12 -304510.04) scale(1920 888.61)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#202b4f"/>
+      <stop offset=".87"/>
+    </linearGradient>
+  </defs>
+  <path id="g" fill="url(#gradG)" d="m1923.53,457.93l-3.53,1039.74H0V0h413.91c59.63,15.83,118.52,32.55,163.71,46.62,91.43,28.47,127.83,49.94,213.31,82.15,85.49,32.22,194.91,75.56,299.59,111.14,104.68,35.58,232.51,82.1,328.46,102.34,95.96,20.24,163.78-.75,247.28,19.12,83.51,19.87,214.98,79.88,257.27,96.56Z"/>
+  <path id="h" fill="url(#gradH)" d="m0,0c40.39,6.08,147.08,15.64,243.35,36.5,96.27,20.86,243.84,60.2,335.27,88.67s127.83,49.93,213.31,82.15,194.91,75.56,299.59,111.14,232.51,82.09,328.46,102.33c95.96,20.24,163.78-.75,247.28,19.12s210.44,83.41,252.73,100.09l1,1036.21H0V0Z"/>
+  <path id="f" fill="url(#gradF)" d="m0,69.62c65.7,18.61,260.41,77.24,395.18,111.63,134.77,34.39,285.58,58.21,414.43,94.7,128.85,36.49,242.31,88.45,358.68,124.26,116.37,35.8,214.07,53.29,339.52,90.57,125.45,37.28,344.33,110.93,413.2,133.12v952.3H0V69.62Z"/>
+  <path id="e" fill="url(#gradE)" d="m0,119.93c50.18,8.63,212.05,102.23,302.11,121.78,90.06,19.55,148.69,45.22,239.26,75.52s205.23,95.48,304.18,136.31c98.94,40.82,287.57,54.62,379.49,88.64s82.62,65.23,162.03,95.46c131.51,50.06,112.87,10.17,291.56,86.02,266.44,116.34,80.77,31.9,242.38,104.84v747.71H0V119.93Z"/>
+  <path id="d" fill="url(#gradD)" d="m0,306.54c36.28,22.6,134.67,120.87,218.69,135.62,84.02,14.74,198.27-61.38,286.45-47.17s165.43,96.58,242.6,132.41,151.78,67.02,220.44,82.56,113.56-17.51,191.54,10.66,181.38,123.19,276.32,158.37,212.47,34.29,293.29,52.69c80.83,18.4,159.73,48.11,191.67,57.73v686.81H0V306.54Z"/>
+  <path id="c" fill="url(#gradC)" d="m0,457.93c48.74,16.08,182.16,61.51,293.45,96.46,111.28,34.94,261.86,80.81,375.25,113.21s201.92,47.46,305.09,81.18,214.55,83.51,313.92,121.12,176.74,73.67,282.29,104.54c105.55,30.86,292.5,67.2,351.01,80.64v521.14H0V457.93Z"/>
+  <path id="b" fill="url(#gradB)" d="m0,566.13c48.85,19.98,198.33,94.37,294.11,119.88,95.78,25.51,191.25,10.45,281.58,33.2,90.33,22.75,175.51,73.79,260.4,103.3,84.89,29.5,159.01,47.71,248.94,73.72,89.93,26.01,193.15,44.72,290.64,82.35s203.41,110.26,294.3,143.42c90.89,33.16,209.19,46.29,251.03,55.55v398.66H0v-1010.09h0Z"/>
+  <path id="a" fill="url(#gradA)" d="m0,687.6c67.35,20.98,277.09,78.33,405.12,125.85,128.03,47.52,235.25,122.82,364.08,159.26s286.31,19.92,408.88,59.37c122.56,39.45,202.68,130.45,326.51,177.32s347.02,86.59,416.42,103.9v262.9H0v-888.61h0Z"/>
+</svg>
