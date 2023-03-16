@@ -1,0 +1,56 @@
+<svg onmouseover="startAnimation()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 559.39 718.42">
+  <style>
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+  <g id="penis">
+    <path class="balls" d="m238.52,665c-84.82,83.26-231.91,22.31-231.51-98-.26-74.29,60.5-136.59,136.5-136.5l-20.74,1.6c84.98-13.83,162.72,57.37,157.06,142.82,0,75.39,61.11,136.5,136.5,136.5,142.91-1.63,187.76-190.44,63.9-257.15-49.98-28.02-119.69-17.5-159,22.61" fill="none" stroke="#0f0" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"/>
+    <path class="shaft" d="m143.19,400.15V143.5c0-75.39,61.11-136.5,136.5-136.5s136.5,61.11,136.5,136.5v256.65" fill="none" stroke="#0f0" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"/>
+    <path class="glans" d="m416.19,184.09c-39.9,23.93-86.59,37.71-136.5,37.71s-96.6-13.77-136.5-37.71" fill="none" stroke="#0f0" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"/>
+  </g>
+  <path id="arrow" d="m214.44,182.19c26.98-25.08,48.73-53.96,65.26-86.65,19.17,33.44,41.71,62.61,68.27,86.65" fill="none" stroke="#0f0" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+<script>
+const svg = document.querySelector('svg');
+const penis = document.getElementById('penis');
+let isAnimated = false;
+penis.style.opacity = 0;
+penis.style.pointerEvents = 'none';
+function startAnimation() {
+  if (!isAnimated) {
+    penis.style.opacity = 1;
+    penis.style.pointerEvents = 'auto';
+    const paths = penis.querySelectorAll('path');
+    paths.forEach((path, index) => {
+      const length = path.getTotalLength();
+      path.style.strokeDasharray = length;
+      path.style.strokeDashoffset = length;
+      path.style.animation = 'draw 1s ease forwards ' + (index * 0.2) + 's';
+    });
+    isAnimated = true;
+  } else {
+    penis.querySelectorAll('path').forEach(path => path.style.animation = 'none');
+    setTimeout(() => {
+      const paths = penis.querySelectorAll('path');
+      paths.forEach((path, index) => {
+        const length = path.getTotalLength();
+        path.style.strokeDasharray = length;
+        path.style.strokeDashoffset = length;
+		path.style.animation = 'draw 1s ease forwards ' + (index * 0.2) + 's';
+      });
+    }, 10);
+  }
+}
+function hidepenis() {
+  penis.style.opacity = 0;
+  penis.style.pointerEvents = 'none';
+  isAnimated = false;
+  penis.querySelectorAll('path').forEach(path => path.style.animation = 'none');
+}
+svg.addEventListener('mouseover', startAnimation);
+svg.addEventListener('mouseout', hidepenis);
+svg.addEventListener('mouseleave', hidepenis);
+</script>
+</svg>
