@@ -609,7 +609,7 @@ option {
   width: 20px;
 }
 
-#txt2img_extra_networks {
+#txt2img_extra_networks:not(.flex.row.w-full.flex-wrap.gap-4.gr-compact) {
   order: 5;
 }
 
