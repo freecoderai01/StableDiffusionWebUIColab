@@ -551,7 +551,8 @@ textarea,
 #available_extensions,
 #settings > div:first-child,
 #extensions_installed_top > div,
-fieldset {
+fieldset,
+#txt2img_extra_tabs > div.tabitem.p-2.border-2.border-t-0.border-gray-200.relative.flex {
   background: none;
   background-image: url("/file=./extensions-builtin/webui-fix/javascript/grain_light.png") !important;
   backdrop-filter: blur(10px) !important;
