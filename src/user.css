@@ -731,3 +731,9 @@ div.w-full.flex.flex-col > div > label > span {
 	margin-left: 8em;
 	width: auto;
 }
+
+.bg-white\/90,
+.bg-gray-200, [data-testid="image"].bg-gray-200  {
+	background-color: #18243a9c;
+    backdrop-filter: blur(10px);
+}
