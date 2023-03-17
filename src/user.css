@@ -737,3 +737,6 @@ div.w-full.flex.flex-col > div > label > span {
 	background-color: #18243a9c;
     backdrop-filter: blur(10px);
 }
+#script_list {
+  margin-top: 1.2em;
+}
