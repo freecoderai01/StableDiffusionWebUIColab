@@ -7,9 +7,6 @@ function updateTimer(el) {
   h = a(b(c / 3600));
   m = a(b((c / 60) % 60));
   s = a(b(c % 60));
-  // console.log(h,m,s)
-
-  // show different text betwen 4:58 and 5:15
   if (c > 298 && c < 315) {
     el.innerText =
       "Обычно в это время вылазит капча, проверь вкладку колаба (" +
@@ -22,16 +19,13 @@ function updateTimer(el) {
   } else {
     el.innerText = h + ":" + m + ":" + s;
   }
-
-  //refresh timer every 30 seconds
+  //обновление таймера каждые 30 сек
   if (c % 30 == 0) {
     refreshTimer(el, true);
     return;
   }
-
   timeout = setTimeout(() => updateTimer(el), 1000);
 }
-
 refreshTimer = (timerEl, notext = false) => {
   if (timeout) {
     clearTimeout(timeout);
@@ -54,35 +48,29 @@ refreshTimer = (timerEl, notext = false) => {
       timerEl.innerText = "Ошибка. "+err;
     });
 };
-
 onUiLoaded(function () {
-  const quickSettings = gradioApp().querySelector("#quicksettings");
-
+  const insertionPosition = document.querySelector("body > gradio-app").shadowRoot.querySelector("div.gradio-container.dark");
   if (gradioApp().querySelector("#colab-timer") != null) return;
   let mainDiv = document.createElement("div");
   mainDiv.id = "colab-timer";
-  mainDiv.className = "flex justify-start";
-  mainDiv.style = "cursor: pointer; user-select: none; margin-top: 9px;";
+  mainDiv.style = "cursor:pointer;user-select:none;display:flex!important;cursor:pointer!important;position:absolute!important;background-color:transparent!important;right:.7em;top:.2em;justify-content:center;width:110px;height:26px;flex-direction:row;align-content:center;align-items:center;font-family:monospace!important;";
   mainDiv.onclick = () => refreshTimer(timerEl);
-
   let div2 = document.createElement("div");
-  div2.className = "flex gap-2 items-center border-solid border gr-box";
-  div2.style =
-    "padding-block: 3px; width: fit-content; scale: 0.8; margin-top: -20px; transform-origin: left center; padding-inline: 5px; border-color: orange; position: absolute; background-color: transparent !important; z-index: 999;";
+  div2.className = "timer";
+  div2.style = "cursor:pointer;user-select:none;display:flex!important;cursor:pointer!important;position:absolute!important;background-color:transparent!important;right:.7em;top:.2em;justify-content:center;width:110px;height:26px;flex-direction:row;align-content:center;align-items:center;font-family:monospace!important;";
   div2.title = "таймер работы колаба: нажми чтобы обновить";
-
   let img = document.createElement("img");
+  img.id = "colab_logo";
   img.src =
     "https://github.com/PR0LAPSE/StableDiffusionWebUIColab/raw/main/src/colab.svg";
   img.width = 24;
-
   let timerEl = document.createElement("div");
-  timerEl.style = "font-family: monospace;color: orange;";
+  timerEl.id = "timer_time";
   timerEl.innerText = "соединение...";
+  timerEl.style = "font-family:monospace!important;color:#ff9f00;margin-left:.3em";
   div2.appendChild(img);
   div2.appendChild(timerEl);
   mainDiv.appendChild(div2);
-  quickSettings.parentNode.insertBefore(mainDiv, quickSettings.nextSibling);
-
+  insertionPosition.parentNode.insertBefore(mainDiv, insertionPosition.nextSibling);
   refreshTimer(timerEl);
 });
