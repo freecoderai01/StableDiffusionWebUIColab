@@ -741,3 +741,62 @@ div.w-full.flex.flex-col > div > label > span {
 #script_list {
   margin-top: 1.2em;
 }
+.modal_warning {
+  background:#000000a3;
+  color: #8BC34A;
+  position:fixed;
+  z-index:999999999;
+  width:100%;
+  height:100%;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: calc(1em * 1.5)
+}
+div.modal_warning > button {
+  color: red;
+  position:relative;
+  top:-6.3em;
+  left:0.8em;
+  z-index:9999;
+}
+.modal_warning > .warning_text {
+  position:relative;
+  width:40em;
+  height:auto;
+  background:#141414;
+  padding:1em;
+}
+.modal_warning > .warning_text > h3 {
+  color: #E91E63;
+  font-size:1.3em;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15em;
+  margin-bottom: 1em
+}
+.modal_warning > .warning_text > a {
+  color: #00BCD4;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25em;
+  text-decoration: underline #03a9f400;
+  transition:0.4s;
+}
+.modal_warning > .warning_text > a:hover {
+  color: #02b0ff;
+  text-decoration: underline #03A9F4
+  
+}
+.modal_warning > .warning_text > ul li {
+  padding-left: 1.4em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='.26' y1='8' x2='15.74' y2='8' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238bc34a'/%3E%3Cstop offset='1' stop-color='%2300bde7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='8 12.85 3.21 15.36 4.13 10.04 .26 6.26 5.61 5.48 8 .64 10.39 5.48 15.74 6.26 11.87 10.04 12.79 15.36 8 12.85' fill='url(%23grad)'/%3E%3C/svg%3E");
+  background-position: 0 5px;
+  background-size: 0.8em 0.8em;
+  background-repeat: no-repeat;
+}
