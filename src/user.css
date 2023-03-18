@@ -800,3 +800,6 @@ div.modal_warning > button {
   background-size: 0.8em 0.8em;
   background-repeat: no-repeat;
 }
+.autocompleteResults {
+  left: 0.8em !important;
+}
