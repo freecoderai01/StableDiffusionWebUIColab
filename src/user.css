@@ -680,7 +680,7 @@ gr-button {
 .prompt_clear {
   fill: #ff000045;
   position: absolute;
-  top: 17px;
+  bottom: 16px;
   right: 20px;
   cursor: pointer;
   transition: 0.3s;
