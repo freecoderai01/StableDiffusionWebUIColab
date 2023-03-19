@@ -584,9 +584,23 @@ fieldset,
   border-color: #4caf50;
   background-color: #8bc34a4d !important;
 }
-.gr-button-secondary:not(#txt2img_random_seed):not(#txt2img_reuse_seed):hover:not(#img2img_random_seed):not(#img2img_reuse_seed):hover {
+.gr-button-secondary:not(#txt2img_random_seed):not(#txt2img_reuse_seed):hover:not(#img2img_random_seed):not(#img2img_reuse_seed):hover:not(#txt2img_interrupt):hover:not(#img2img_interrupt):hover:not(#txt2img_skip):hover:not(#img2img_skip):hover:not(#txt2img_interrupt):not(#img2img_interrupt):not(#txt2img_skip):not(#img2img_skip) {
   border: 1px solid #2196f354 !important;
   background-color: #2196f33d !important;
+}
+#txt2img_interrupt:hover,
+#txt2img_skip:hover,
+#img2img_interrupt:hover,
+#img2img_skip:hover {
+  border-color: #FF5722!important;
+  background-color: #ff572278 !important;
+}
+#txt2img_interrupt,
+#txt2img_skip,
+#img2img_interrupt,
+#img2img_skip {
+  border-color: #ff7122!important;
+  background-color: #ff732278 !important;
 }
 select,
 option {
