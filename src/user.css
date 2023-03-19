@@ -20,10 +20,8 @@ body,
   font-family: "Source Sans Pro", sans-serif;
 }
 
-#save_zip_txt2img,
-#open_folder_txt2img,
-#save_zip_img2img,
-#open_folder_img2img {
+[id*=open_folder],
+[id*=save_zip] {
   display: none !important;
 }
 
