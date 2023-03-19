@@ -827,3 +827,9 @@ nav#context-menu {
 	width: 14em!important;
 	background: #0d1801!important;
 }
+div[id$="_token_counter"] {
+	color: #8BC34A!important;
+	background:#010e15!important;
+	border: 1px solid #054107!important;
+	padding:0.1em 0.02em!important;
+}
