@@ -806,3 +806,10 @@ div.modal_warning > button {
 .extra-network-cards .card{
    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 768'%3E%3Cpath fill='%23acb0b1' d='M0 0h512v768H0z'/%3E%3Cg fill='none' stroke='%23646f84' stroke-linecap='round' stroke-linejoin='round' stroke-width='11.3'%3E%3Cpath d='M222.75 580.97c-68.49 67.23-187.26 18.02-186.94-79.13-.21-59.99 48.85-110.29 110.22-110.22l-16.75 1.29c68.62-11.17 131.39 46.32 126.82 115.33 0 60.87 49.35 110.22 110.22 110.22 115.4-1.31 151.61-153.77 51.6-207.64-40.35-22.62-96.64-14.13-128.38 18.25m-143.76-61.96V159.87C145.78 99 195.13 49.65 256 49.65S366.22 99 366.22 159.87v207.24'/%3E%3Cpath d='M366.22 192.65C334 211.98 296.3 223.1 256 223.1s-78-11.12-110.22-30.45m56.31-28.14a246.97 246.97 0 0 0 52.69-69.96c15.48 27.01 33.68 50.55 55.13 69.96'/%3E%3C/g%3E%3C/svg%3E") !important;
 }
+nav#context-menu {
+	border: 2px solid #4caf50!important;
+	border-radius: 0px!important;
+	box-shadow: 0px 0px 36px #8bc34a!important;
+	width: 14em!important;
+	background: #0d1801!important;
+}
