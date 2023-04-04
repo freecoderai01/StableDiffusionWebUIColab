@@ -139,5 +139,16 @@
     "always_discard_next_to_last_sigma": false,
     "control_net_allow_script_control": true,
     "def_batch_dir": "/content/gdrive/MyDrive/SD/ip2p-batch",
-    "outdir_ip2p_samples": "/content/gdrive/MyDrive/SD/ip2p-images"
+    "outdir_ip2p_samples": "/content/gdrive/MyDrive/SD/ip2p-images",
+    "additional_networks_extra_lora_path": "/content/stable-diffusion-webui/models/Lora",
+    "additional_networks_sort_models_by": "name",
+    "additional_networks_reverse_sort_order": false,
+    "additional_networks_model_name_filter": "",
+    "additional_networks_xy_grid_model_metadata": "",
+    "additional_networks_hash_thread_count": 10.0,
+    "additional_networks_back_up_model_when_saving": true,
+    "additional_networks_show_only_safetensors": false,
+    "additional_networks_show_only_models_with_metadata": "disabled",
+    "additional_networks_max_top_tags": 20.0,
+    "additional_networks_max_dataset_folders": 20.0
 }
